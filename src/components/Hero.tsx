@@ -32,7 +32,7 @@ export default function Hero(){
   }
 
   return (
-    <section id="hero" className="bg-lightGray h-screen w-screen">
+    <section id="home" className="bg-lightGray h-screen w-screen">
       <div className="pt-32 lg:pt-14 md:mx-auto py-0 px-16 max-w-[101rem]">
         <div className="flex items-center justify-center flex-col lg:h-screen">
           <div className="flex flex-col items-center gap-16 lg:gap-40 lg:flex-row-reverse lg:justify-center">

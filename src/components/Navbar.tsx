@@ -61,7 +61,9 @@ export default function Navbar() {
                     {navItems.map((item) => {
                       return (
                         <Menu.Item>
-                          <Anchor className="font-normal text-3xl" key={item.name} section={item.section} name={item.name} onClick={close}/>
+                          {({ close }) => (
+                            <Anchor className="font-normal text-3xl" key={item.name} section={item.section} name={item.name} onClick={close}/>
+                          )}
                         </Menu.Item>
                       )
                     })}
