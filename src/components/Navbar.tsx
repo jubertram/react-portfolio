@@ -36,7 +36,7 @@ export default function Navbar() {
           {({open}) => (
             <>
               <Menu.Button>
-              <FontAwesomeIcon icon={faBars} className="text-2xl font-light pr-4 hover:text-green"/>
+              <FontAwesomeIcon icon={faBars} className="text-2xl pr-4 hover:text-green"/>
               </Menu.Button>
 
               <Transition
