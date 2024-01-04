@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  @apply text-gray;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+    @apply font-semibold;
+    @apply block;
+    @apply my-3;
+  }
+  h2 {
+    @apply text-xl;
+    @apply font-semibold;
+    @apply block;
+    @apply my-3;
+  }
+  h3 {
+    @apply text-lg;
+    @apply font-semibold;
+    @apply block;
+    @apply my-4;
+  }
+  h4 {
+    @apply text-base;
+    @apply font-semibold;
+    @apply block;
+    @apply my-5;
+  }
+  h5 {
+    @apply text-sm;
+    @apply font-semibold;
+    @apply block;
+    @apply my-6;
+  }
+  h6 {
+    @apply text-xs;
+    @apply font-semibold;
+    @apply block;
+    @apply my-7;
+  }
+  p {
+    @apply block;
+    @apply my-4;
+  }
+
+  a{
+    @apply font-semibold;
+    @apply text-lg;
+    @apply transition-colors;
+    @apply duration-300;
+    @apply ease-in;
+
+  }
+  a:hover{
+    @apply text-green;
+  }
+}
