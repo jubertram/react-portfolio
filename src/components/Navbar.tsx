@@ -28,7 +28,7 @@ const navItems: Array<{
 
 export default function Navbar() {
   return (
-    <nav className="px-6 flex h-20 items-center justify-between sticky w-full shadow-md md:px-8">
+    <nav className="z-40 bg-white px-6 flex h-20 items-center justify-between fixed w-full shadow-md md:px-8">
       <Anchor section='#home' className="font-bold hover:text-gray text-xl" name="Julien.dev"/>
 
       <div id="mobile-menu" className="md:hidden">

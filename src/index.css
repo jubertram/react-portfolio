@@ -23,8 +23,8 @@ input[type="reset"] {
 
 @layer base {
   h1 {
-    @apply text-2xl;
-    @apply font-semibold;
+    @apply text-6xl;
+    @apply font-bold;
     @apply block;
     @apply my-3;
   }
@@ -73,5 +73,17 @@ input[type="reset"] {
   }
   a:hover{
     @apply text-green;
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
