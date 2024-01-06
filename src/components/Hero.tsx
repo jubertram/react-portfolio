@@ -1,3 +1,4 @@
+import { ReactNode } from "react"
 
 export default function Hero(){
 
@@ -31,6 +32,8 @@ export default function Hero(){
     transition: "all 1s ease-in-out",
   }
 
+  const techStacks: [string,string,string,string] = ["https://skillicons.dev/icons?i=html,css", "https://skillicons.dev/icons?i=js,ts", "https://skillicons.dev/icons?i=react,remix", "https://skillicons.dev/icons?i=tailwind,sass" ]
+
   return (
     <section id="home" className="bg-lightGray h-screen w-screen">
       <div className="pt-32 lg:pt-14 md:mx-auto py-0 px-16 max-w-[101rem]">
@@ -42,10 +45,14 @@ export default function Hero(){
               <p className="my-3 text-center lg:text-left text-lg text-mediumGray">Hi, I'm Julien Bertram. A passionate Front-end React Developer based in Montréal, QC. 📍</p>
             </div>
           </div>
-          <div className="mt-20">
-            Skills
+          <div className="mt-20 flex flex-col items-center">
+            <h2 className="font-medium border-b-2 border-b-zinc-400 pb-2">Tech Stack</h2>
+            <ul className="flex wrap content-center mt-5">
+            {techStacks.map((stack) => {
+              return <li className="pr-8"><img key={stack} src={stack}/></li>
+            })}
+            </ul>
           </div>
-
         </div>
       </div>
 
