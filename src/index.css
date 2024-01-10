@@ -9,6 +9,8 @@ body {
   @apply text-gray;
 }
 
+html {scroll-behavior: smooth;}
+
 button,
 input[type="submit"],
 input[type="reset"] {
