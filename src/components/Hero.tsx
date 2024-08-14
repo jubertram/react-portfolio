@@ -33,7 +33,7 @@ export default function Hero(){
     transition: "all 1s ease-in-out",
   }
 
-  const techStacks: [string,string,string,string] = ["https://skillicons.dev/icons?i=html,css", "https://skillicons.dev/icons?i=js,ts", "https://skillicons.dev/icons?i=react,remix", "https://skillicons.dev/icons?i=tailwind,sass" ]
+  const techStacks: [string,string,string,string] = ["https://skillicons.dev/icons?i=html,css", "https://skillicons.dev/icons?i=js,ts", "https://skillicons.dev/icons?i=react,rails", "https://skillicons.dev/icons?i=tailwind,sass" ]
 
   return (
     <section id="home" className="bg-lightGray h-fit w-screen">
@@ -43,7 +43,7 @@ export default function Hero(){
             <div className="bg-[url('assets/pp.png')] bg-cover md:w-[22rem] md:h-[22rem] w-60 h-60 border" style={heroImageStyle}></div>
             <div className="md:mt-0 flex flex-col items-center md:max-w-[32rem]">
               <h1 className="text-4xl md:text-6xl text-center lg:text-left">Front-End React Developer ✋🏼</h1>
-              <p className="my-7 text-center lg:text-left text-lg text-mediumGray">Hi, I'm Julien Bertram. A passionate Front-end React Developer based in Montréal, QC. 📍</p>
+              <p className="my-7 text-center lg:text-left text-lg text-mediumGray">Bonjour, je suis Julien Bertram. Un développeur Front-end React passionné, basé à Nice, France. 📍</p>
               <div className="flex gap-4 w-full justify-center lg:justify-start">
                 <a href="https://www.linkedin.com/in/julien-bertram/" target="_blank" className="text-3xl">
                   <FontAwesomeIcon icon={faLinkedin} />
@@ -58,7 +58,7 @@ export default function Hero(){
             <h4 className="border-b-2 pb-2 border-b-zinc-400 lg:border-r-2 lg:pr-5 lg:border-r-zinc-400 lg:border-b-0 lg:p-0 lg:m-0 lg:mr-20">Tech Stack</h4>
             <div className="flex flex-wrap justify-center gap-8 content-center mt-5 lg:mt-0">
             {techStacks.map((stack) => {
-              return <div className="transition ease-in-out hover:-translate-y-3 duration-500 cursor-pointer"><img key={stack} src={stack} /></div>
+              return <div key={stack} className="transition ease-in-out hover:-translate-y-3 duration-500"><img key={stack} src={stack} /></div>
             })}
             </div>
           </div>

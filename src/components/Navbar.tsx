@@ -1,19 +1,21 @@
+"use client";
 import { Navbar } from "flowbite-react";
+
 
 const navItems: Array<{
   name: string;
   section: string;
 }> = [
   {
-    name: "Home",
+    name: "Accueil",
     section: "#home",
   },
   {
-    name: "About",
+    name: "A propos",
     section: "#about",
   },
   {
-    name: "Projects",
+    name: "Projets",
     section: "#projects",
   },
   {
@@ -24,9 +26,9 @@ const navItems: Array<{
 
 export default function HomeNavbar() {
   return (
-      <Navbar fluid rounded className="sticky top-0 h-20 pt-6 w-full">
-        <Navbar.Brand href="#home" >
-          <span className="self-center whitespace-nowrap text-xl font-extrabold dark:text-white">Julien.Dev</span>
+      <Navbar fluid rounded className="sticky top-0 z-50 w-screen">
+        <Navbar.Brand href="#home" className="h-16 ml-10" >
+          <span className="self-center whitespace-nowrap text-xl font-extrabold">Julien.Dev</span>
         </Navbar.Brand>
 
         <Navbar.Toggle />
