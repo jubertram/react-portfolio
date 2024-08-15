@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion"
+import Emoji from "../assets/tech_emoji.png"
+import RoundText from "../assets/round-text.svg"
 
 export default function About() {
   return (
@@ -19,9 +21,9 @@ export default function About() {
               repeatDelay:0
             }}
           >
-            <img src="src/assets/round-text.svg" className="relative left-1" alt="" />
+            <img src={RoundText} className="relative left-1" alt="" />
           </motion.div>
-            <img src="src/assets/tech_emoji.png" className="w-16 absolute top-16 left-16" />
+            <img src={Emoji} className="w-16 absolute top-16 left-16" />
         </div>
         </div>
       <div className="flex flex-col items-center lg:items-start w-full lg:w-1/3">

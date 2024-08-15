@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import ProjectCard from "./ProjectCard";
+import Iron from "../assets/Iron&Earth.png"
+import Tracer from "../assets/Tracer.png"
 
 export default function Project(){
   return (
@@ -12,7 +14,7 @@ export default function Project(){
       <div className="flex flex-col gap-32">
         <ProjectCard
           title="Iron & Earth 🌍"
-          img="src/assets/Iron&Earth.png"
+          img={Iron}
           content={
             <>
               <p className="text-mediumGray my-0">Un site web canadien de recherche d'emploi et d'aide à la reconversion vers les énergies vertes.
@@ -41,7 +43,7 @@ export default function Project(){
             </p>
           }
           badges={["Ruby on Rails", "PostgreSQL"]}
-          img="src/assets/Tracer.png"
+          img={Tracer}
           links={[{
             cta: <div className="flex gap-1 align-baseline">
               Demo live
