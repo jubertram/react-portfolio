@@ -30,11 +30,11 @@ export default function About() {
         <h2 className="text-green font-bold mt-14 md:mt-0 text-center lg:text-left">A PROPOS DE MOI</h2>
         <h4 className="text-2xl w-full text-center lg:text-left mt-0 font-bold">Un Développeur Junior passionné</h4>
         <p className="text-center text-mediumGray px-3 lg:px-0 lg:text-left md:p-0 md:m-0">
-          Développeur depuis fin 2022 suite à une reconversion professionnel, je me suis découvert une très grande appétence pour le développement. Après avoir réussi haut la main le bootcamp Le Wagon, je suis parti au Canada pour travailler dans ce domaine.
+          Développeur depuis fin 2022 suite à une reconversion professionnelle, je me suis découvert une très grande appétence pour le développement. Après avoir réussi haut la main le bootcamp Le Wagon, je suis parti au Canada pour travailler dans ce domaine.
           <br/><br/>
-          Depuis, j'ai développé mes compétences avec notamment React, Tailwind, Typescript. J'ai également pu continuer à approfondir mes connaissances avec Ruby on Rails.
+          Depuis, j'ai développé mes compétences avec notamment React, Typescript et Tailwind. J'ai également pu continuer à approfondir mes connaissances avec Ruby on Rails.
           <br/><br/>
-          Je suis une personne calme, rigoureuse et ordonnée, j'ai acquis dans mon précédent emploi un fort esprit d'équipe et pouvoir d'adaptation et de réaction élevé.
+          Je suis une personne calme, rigoureuse et ordonnée. J'ai acquis dans mon précédent emploi un fort esprit d'équipe et pouvoir d'adaptation et de réaction élevé.
         </p>
       </div>
       </div>
