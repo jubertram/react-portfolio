@@ -43,7 +43,7 @@ export default function Hero(){
             <div className="bg-[url('assets/pp.png')] bg-cover md:w-[22rem] md:h-[22rem] w-60 h-60 border" style={heroImageStyle}></div>
             <div className="md:mt-0 flex flex-col items-center md:max-w-[32rem]">
               <h1 className="text-center my-0 font-extrabold lg:text-left text-3xl md:text-5xl !leading-snug">Développeur React Front-End ✋🏼</h1>
-              <p className="my-7 text-center lg:text-left text-lg text-mediumGray">Bonjour, je suis Julien Bertram. Un Front-end React passionné, basé à Nice, France. 📍</p>
+              <p className="my-7 text-center lg:text-left text-lg text-mediumGray">Bonjour, je suis Julien Bertram. Un développeur junior passionné, basé à Nice, France. 📍</p>
               <div className="flex gap-4 w-full justify-center lg:justify-start">
                 <a href="https://www.linkedin.com/in/julien-bertram/" rel="noreferrer" target="_blank" className="text-3xl hover:text-green">
                   <FontAwesomeIcon icon={faLinkedin} />
