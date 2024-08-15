@@ -1,6 +1,51 @@
-"use client";
-import { Navbar } from "flowbite-react";
+import { CustomFlowbiteTheme, Navbar } from "flowbite-react";
 
+const customNavbar: CustomFlowbiteTheme["navbar"] = {
+"root": {
+    "base": "bg-white px-2 py-6 md:py-8 dark:border-gray-700 dark:bg-gray-800 sm:px-4",
+    "rounded": {
+      "on": "rounded",
+      "off": ""
+    },
+    "bordered": {
+      "on": "border",
+      "off": ""
+    },
+    "inner": {
+      "base": "mx-auto flex flex-wrap items-center justify-between",
+      "fluid": {
+        "on": "",
+        "off": "container"
+      }
+    }
+  },
+  "brand": {
+    "base": "flex items-center"
+  },
+  "collapse": {
+    "base": "w-full md:block md:w-auto",
+    "list": "mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium",
+    "hidden": {
+      "on": "hidden",
+      "off": ""
+    }
+  },
+  "link": {
+    "base": "text-lg block py-2 pl-3 pr-4 md:p-0",
+    "active": {
+      "on": "bg-cyan-700 text-white dark:text-white md:bg-transparent md:text-cyan-700",
+      "off": "border-b border-gray-100 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-cyan-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
+    },
+    "disabled": {
+      "on": "text-gray-400 hover:cursor-not-allowed dark:text-gray-600",
+      "off": ""
+    }
+  },
+  "toggle": {
+    "base": "inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden",
+    "icon": "h-6 w-6 shrink-0"
+  }
+}
 
 const navItems: Array<{
   name: string;
@@ -26,15 +71,15 @@ const navItems: Array<{
 
 export default function HomeNavbar() {
   return (
-      <Navbar fluid rounded className="sticky top-0 z-50 w-screen">
-        <Navbar.Brand href="#home" className="h-16 ml-10" >
+      <Navbar theme={customNavbar} fluid rounded className="sticky top-0 z-50">
+        <Navbar.Brand href="#home" className="hover:!text-green" >
           <span className="self-center whitespace-nowrap text-xl font-extrabold">Julien.Dev</span>
         </Navbar.Brand>
 
         <Navbar.Toggle />
         <Navbar.Collapse>
           {navItems.map((item) => {
-            return <Navbar.Link key={item.name} href={item.section}>{item.name}</Navbar.Link>
+            return <Navbar.Link className="hover:!text-green" key={item.name} href={item.section}>{item.name}</Navbar.Link>
 
           })}
         </Navbar.Collapse>
