@@ -13,13 +13,14 @@ html {scroll-behavior: smooth;}
 
 @layer base {
   h1 {
-    @apply text-6xl;
+    @apply text-4xl;
     @apply font-bold;
     @apply block;
     @apply my-3;
   }
   h2 {
-    @apply text-3xl;
+    @apply md:text-3xl;
+    @apply text-2xl;
     @apply font-bold;
     @apply block;
     @apply my-3;
@@ -51,6 +52,7 @@ html {scroll-behavior: smooth;}
   }
   p {
     @apply block;
+    @apply text-base;
     @apply my-4;
   }
 }

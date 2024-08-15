@@ -23,20 +23,20 @@ export default function ProjectCard({
 })
 {
   return (
-    <div className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-10 lg:gap-36 w-full justify-center`}>
+    <div className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-10 lg:gap-32 w-full items-center justify-around`}>
         <img src={img} alt="" className="w-[450px] object-cover rounded-lg"/>
     <div className="flex flex-col w-full text-center lg:w-1/3 items-center justify-center gap-4">
       <h3 className="my-0">{title}</h3>
       {content}
-      <div className="flex gap-2">
+      <div className="flex gap-2 items-center justify-center w-full">
         {badges.map(badge =>
-          <Badge color="gray" className="bg-green text-white">{badge}</Badge>
+          <Badge key={badge} color="gray" className="bg-green text-white">{badge}</Badge>
         )}
       </div>
 
       <div className="flex gap-2 flex-col w-full md:flex-row items-center justify-center">
         {links.map(link =>
-          <Button color="dark" className="hover:bg-gray-900 w-full md:w-fit" target="_blank" href={link.href}>{link.cta}</Button>
+          <Button key={link.href} color="dark" className="hover:bg-gray-900 w-full md:w-fit" target="_blank" href={link.href}>{link.cta}</Button>
         )}
       </div>
     </div>
