@@ -1,5 +1,5 @@
 import { Badge, Button } from "flowbite-react";
-import { ReactElement, ReactHTML } from "react";
+import { ReactElement } from "react";
 
 interface linksType {
   cta: string | ReactElement;
