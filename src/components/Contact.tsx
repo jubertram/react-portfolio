@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function Contact(){
   return (
     <section id="contact" className="h-content py-20 flex flex-col justify-center items-center">
