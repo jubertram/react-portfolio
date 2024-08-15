@@ -1,24 +1,5 @@
-import { Badge, Button, Card, CustomFlowbiteTheme } from "flowbite-react";
+/* eslint-disable react/no-unescaped-entities */
 import ProjectCard from "./ProjectCard";
-
-const customCard: CustomFlowbiteTheme["card"] = {
-  "root": {
-    "base": "flex rounded-lg bg-white shadow-md w-[600px] h-96",
-    "children": "flex h-full  flex-col justify-center gap-4 p-6",
-    "horizontal": {
-      "off": "flex-col",
-      "on": "w-full flex-col md:max-w-xl md:flex-row"
-    },
-    "href": "hover:bg-gray-100 dark:hover:bg-gray-700"
-  },
-  "img": {
-    "base": "",
-    "horizontal": {
-      "off": "rounded-t-lg",
-      "on": "h-96 rounded-t-lg object-cover md:h-auto md:w-96 md:rounded-none md:rounded-l-lg"
-    }
-  }
-}
 
 export default function Project(){
   return (
