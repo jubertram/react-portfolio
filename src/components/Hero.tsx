@@ -45,10 +45,10 @@ export default function Hero(){
               <h1 className="text-center my-0 font-extrabold lg:text-left text-3xl md:text-5xl !leading-snug">Développeur React Front-End ✋🏼</h1>
               <p className="my-7 text-center lg:text-left text-lg text-mediumGray">Bonjour, je suis Julien Bertram. Un Front-end React passionné, basé à Nice, France. 📍</p>
               <div className="flex gap-4 w-full justify-center lg:justify-start">
-                <a href="https://www.linkedin.com/in/julien-bertram/" target="_blank" className="text-3xl hover:text-green">
+                <a href="https://www.linkedin.com/in/julien-bertram/" rel="noreferrer" target="_blank" className="text-3xl hover:text-green">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
-                <a href="https://github.com/jubertram" target="_blank" className="text-3xl hover:text-green">
+                <a href="https://github.com/jubertram" target="_blank" rel="noreferrer" className="text-3xl hover:text-green">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </div>
